@@ -1,0 +1,11 @@
+#!/bin/sh
+
+unclutter &
+cd PartyPictures
+
+while ( true ) do
+	NAME=$(date +%s)
+        mkdir $NAME
+        mv *.JPG $NAME
+        java PartyPictures
+done
